@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form 2115931</title>
+    <style media="screen">
+
+      h1{
+        text-align: center;
+        color: blue;
+        font-family: "Arial";
+      }
+
+      .button{
+        background-color: lightgrey;
+        text-align: center;
+        width: 70px;
+        line-height: 30px;
+      }
+
+      .button:hover,
+      .button:active,
+      .button:focus{
+        background-color: #E7B246;
+      }
+
+      form{
+        background-color: #C2E2EC;
+        width: 400px;
+        margin: auto;
+        border-radius: 5px 5px 5px 5px;
+        padding: 20px;
+        font-family: "Arial";
+      }
+
+      .checkbox{
+        font-size: 15px;
+      }
+
+      #name{
+        width: 400px;
+        box-sizing: border-box;
+        height: 30px;
+      }
+
+      #contact{
+        width: 400px;
+        box-sizing: border-box;
+        height: 30px;
+      }
+
+      #mail{
+        width: 400px;
+        box-sizing: border-box;
+        height: 30px;
+      }
+
+      #gender{
+        width: 400px;
+        box-sizing: border-box;
+        height: 30px;
+      }
+
+      textarea{
+        width: 400px;
+        box-sizing: border-box;
+        height: 150px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+
+    <form action="/my-handling-form-page" method="post">
+
+<div class="name">
+  <label for="name">Name</label>
+  <br>
+  <input type="text" id="name" name="user_name">
+</div>
+
+<br>
+
+<div class="contactno">
+  <label for="contact">Contact No.</label>
+  <br>
+  <input type="text" id="contact" name="contact">
+</div>
+
+<br>
+
+<div class="mail">
+  <label for="mail">Email</label>
+  <br>
+  <input type="email" id="mail" name="user_email">
+</div>
+
+
+<br>
+
+<div class="label">
+  <label for="gender">Gender</label>
+  <br>
+  <select name="gender" id="gender">
+      <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+<div class="checkbox">
+  <input type="checkbox" id="confirm" name="confirm" value="confirm">
+  <label for="confirmation"> I have confirmed all the above details are correct</label>
+</div>
+
+<br>
+
+<div class="text">
+  <label for="msg">Message:</label>
+  <br>
+  <textarea id="msg" name="user_message"></textarea>
+</div>
+
+<br>
+
+  <center>
+  <button class = "button" type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
